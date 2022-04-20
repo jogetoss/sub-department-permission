@@ -1,6 +1,6 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+This repository contains the Department and Sub Department Permission Plugin that checks if the user currently logged in belongs to the selected department or any sub departments under the selected department before letting the user view the screen.
 
 # Getting Help
 
