@@ -1,0 +1,18 @@
+[{
+    "title" : "@@userview.subdepartmentpermission.config@@",
+    "properties" : [{
+        "name" : "orgId",
+        "label" : "@@userview.subdepartmentpermission.selectOrg@@",
+        "type" : "selectbox",
+        "options_ajax" : "[CONTEXT_PATH]/web/json/app[APP_PATH]/plugin/org.joget.plugin.SubDepartmentPermission/service?action=getOrgs"
+
+    },
+    {
+        "name" : "allowedDeptIds",
+        "label" : "@@userview.subdepartmentpermission.selectDept@@",
+        "type" : "multiselect",
+        "size" : "10",
+        "options_ajax_on_change" : "orgId",
+        "options_ajax" : "[CONTEXT_PATH]/web/json/app[APP_PATH]/plugin/org.joget.plugin.SubDepartmentPermission/service?action=getDepts"
+    }]
+}]
